@@ -1,6 +1,8 @@
 # PINBALL PROJECT IDEAS
 • Rebotadores
+
 • Muelle
+
 • Puntuación y record
 • Contador de bolas
 • Sonidos y música
