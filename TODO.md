@@ -30,8 +30,8 @@
 • Cambiar movimiento flippers para hacerlo más realista
 
 # RESOURCES
-*Tutorial*
+*Tutorial:*
 https://www.youtube.com/watch?v=bcTq6BVwrDA
 
-*Concept*
+*Concept:*
 https://www.youtube.com/watch?v=RKzQmxbOhTI
