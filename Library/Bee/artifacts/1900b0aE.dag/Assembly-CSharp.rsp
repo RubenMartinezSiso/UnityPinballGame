@@ -355,6 +355,7 @@
 "Assets/Scripts/LifesScript.cs"
 "Assets/Scripts/PlungerScript.cs"
 "Assets/Scripts/points.cs"
+"Assets/Scripts/SoundController.cs"
 "Assets/Scripts/SpawnerScript.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
