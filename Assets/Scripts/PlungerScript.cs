@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlungerScript : MonoBehaviour
 {
     float power;
-    float minPower = 0f;
+    // float minPower = 0f;
     public float maxPower = 100f;
     public Slider powerSlider;
     List<Rigidbody> ballList;
