@@ -10,18 +10,23 @@ public class LifesScript : MonoBehaviour
     public Image[] lifeImages;
     public int lifesLeft;
     public TextMeshProUGUI loseText;
+    public GameObject spring;
+    SpringScript externalScriptInstance;
+    public bool plungeractive;
 
     // Start is called before the first frame update
     void Start()
     {
         lifesLeft = 3;
-        Debug.Log("You have " + lifesLeft + " lives");
         loseText.gameObject.SetActive(false);
+        externalScriptInstance = spring.GetComponent<SpringScript>();
+        plungeractive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -33,8 +38,9 @@ public class LifesScript : MonoBehaviour
 
             if (lifesLeft <= 0)
             {
-                Debug.Log("You lose");
                 loseText.gameObject.SetActive(true);
+                externalScriptInstance.ballIn = false;
+                plungeractive = false;
             }
         }
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18154636, g: 0.22718701, b: 0.3074048, a: 1}
+  m_IndirectSpecularColor: {r: 0.1815468, g: 0.22718757, b: 0.30740595, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1348
+  m_Name: pb_Mesh-1734
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -675,7 +675,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23402
+  m_Name: pb_Mesh24066
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1039,6 +1039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colliderObject: {fileID: 202057214}
+  spring: {fileID: 234536718}
 --- !u!64 &202057216
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1347,6 +1348,8 @@ MonoBehaviour:
   newZScale: 1
   newZPosition: -6
   delay: 0.05
+  killball: {fileID: 1699525362}
+  ballIn: 0
 --- !u!65 &234536720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1926,7 +1929,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23660
+  m_Name: pb_Mesh24340
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2187,7 +2190,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23654
+  m_Name: pb_Mesh24332
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2640,7 +2643,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1362
+  m_Name: pb_Mesh-1748
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3027,6 +3030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxPower: 100
   powerSlider: {fileID: 1868088730}
+  killball: {fileID: 1699525362}
 --- !u!65 &916138113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4136,7 +4140,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23304
+  m_Name: pb_Mesh23966
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4608,7 +4612,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1260
+  m_Name: pb_Mesh-1652
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4894,6 +4898,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 849931111, guid: cc627d85f1f021746beb4687996ba600, type: 3}
+      propertyPath: killball
+      value: 
+      objectReference: {fileID: 1699525362}
+    - target: {fileID: 849931111, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: inputName
       value: LFlipper
       objectReference: {fileID: 0}
@@ -4963,7 +4971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1158543685144538811, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_Name
-      value: Flipper (1)
+      value: LeftFlipper
       objectReference: {fileID: 0}
     - target: {fileID: 1550664964683436652, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_RootOrder
@@ -5031,7 +5039,7 @@ PrefabInstance:
       objectReference: {fileID: 1555347158}
     - target: {fileID: 5668747856344042771, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_VersionIndex
-      value: 662
+      value: 665
       objectReference: {fileID: 0}
     - target: {fileID: 6719705143378409429, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_Mesh
@@ -5043,7 +5051,7 @@ PrefabInstance:
       objectReference: {fileID: 1968920892}
     - target: {fileID: 7949368418919289495, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_VersionIndex
-      value: 665
+      value: 668
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc627d85f1f021746beb4687996ba600, type: 3}
@@ -5081,6 +5089,7 @@ MonoBehaviour:
   ball: {fileID: 1244604057}
   colliderObject: {fileID: 202057214}
   respawnPoint: {fileID: 1140209292}
+  spring: {fileID: 234536718}
 --- !u!65 &1699525364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5128,6 +5137,8 @@ MonoBehaviour:
   - {fileID: 135426096}
   lifesLeft: 3
   loseText: {fileID: 1033775681}
+  spring: {fileID: 234536718}
+  plungeractive: 0
 --- !u!1001 &1717030182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5219,7 +5230,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23624
+  m_Name: pb_Mesh24300
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5799,7 +5810,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1274
+  m_Name: pb_Mesh-1666
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6749,6 +6760,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 849931111, guid: cc627d85f1f021746beb4687996ba600, type: 3}
+      propertyPath: killball
+      value: 
+      objectReference: {fileID: 1699525362}
     - target: {fileID: 849931112, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_Anchor.x
       value: -0.05
@@ -6791,7 +6806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1158543685144538811, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_Name
-      value: Flipper
+      value: RightFlipper
       objectReference: {fileID: 0}
     - target: {fileID: 1550664964683436652, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_RootOrder
@@ -6859,7 +6874,7 @@ PrefabInstance:
       objectReference: {fileID: 6785653}
     - target: {fileID: 5668747856344042771, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_VersionIndex
-      value: 659
+      value: 662
       objectReference: {fileID: 0}
     - target: {fileID: 6719705143378409429, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_Mesh
@@ -6871,7 +6886,7 @@ PrefabInstance:
       objectReference: {fileID: 872149294}
     - target: {fileID: 7949368418919289495, guid: cc627d85f1f021746beb4687996ba600, type: 3}
       propertyPath: m_VersionIndex
-      value: 662
+      value: 665
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc627d85f1f021746beb4687996ba600, type: 3}

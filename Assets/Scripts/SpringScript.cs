@@ -22,48 +22,56 @@ public class SpringScript : MonoBehaviour
     public float newZPosition = initialZPositionValue;
     public float delay = delayValue;
     float timer;
+    public GameObject killball;
+    public bool ballIn;
+    LifesScript externalLifesScript;
 
     void Start()
     {
-
+        ballIn = true;
+        externalLifesScript = killball.GetComponent<LifesScript>();
     }
 
     void Update()
     {
-        // The player press the button
-        if (Input.GetKey(KeyCode.Space))
+        if (externalLifesScript.lifesLeft > 0 && ballIn)
         {
-            // Debug.Log("PRESS AND HOLD SPACE");
-            // Debug.Log("newZScale:" + newZScale);
-            timer += Time.deltaTime;
-            if (timer > delay){
-                if (newZScale >= minimumScale)
-                { 
-                    transform.localScale = new Vector3 (gameObject.transform.localScale.x,
-                                                        gameObject.transform.localScale.y,
-                                                        newZScale);   // Change scale (just Z)
-                    transform.position = new Vector3 (gameObject.transform.localPosition.x,
-                                                      gameObject.transform.localPosition.y,
-                                                      newZPosition);  // Change position (just Z)
+            // The player press the button
+            if (Input.GetKey(KeyCode.Space))
+            {
+                // Debug.Log("PRESS AND HOLD SPACE");
+                // Debug.Log("newZScale:" + newZScale);
+                timer += Time.deltaTime;
+                if (timer > delay)
+                {
+                    if (newZScale >= minimumScale)
+                    {
+                        transform.localScale = new Vector3(gameObject.transform.localScale.x,
+                                                            gameObject.transform.localScale.y,
+                                                            newZScale);   // Change scale (just Z)
+                        transform.position = new Vector3(gameObject.transform.localPosition.x,
+                                                          gameObject.transform.localPosition.y,
+                                                          newZPosition);  // Change position (just Z)
 
-                    newZScale = newZScale - scaleVariation;           // Every update change his scale
-                    newZPosition = newZPosition - scaleVariation/2;   // Every update change his position (has to be the half of the change of newZScale)
+                        newZScale = newZScale - scaleVariation;           // Every update change his scale
+                        newZPosition = newZPosition - scaleVariation / 2;   // Every update change his position (has to be the half of the change of newZScale)
+                    }
                 }
             }
-        }
 
-        // The player release the button
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            // Reset scale and position
-            newZScale = initialZScaleValue;
-            newZPosition = initialZPositionValue;
-            transform.localScale = new Vector3(gameObject.transform.localScale.x,
-                                                        gameObject.transform.localScale.y,
-                                                        initialZScaleValue);
-            transform.position = new Vector3(gameObject.transform.localPosition.x,
-                                              gameObject.transform.localPosition.y,
-                                              initialZPositionValue);
+            // The player release the button
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                // Reset scale and position
+                newZScale = initialZScaleValue;
+                newZPosition = initialZPositionValue;
+                transform.localScale = new Vector3(gameObject.transform.localScale.x,
+                                                            gameObject.transform.localScale.y,
+                                                            initialZScaleValue);
+                transform.position = new Vector3(gameObject.transform.localPosition.x,
+                                                  gameObject.transform.localPosition.y,
+                                                  initialZPositionValue);
+            }
         }
     }
 }

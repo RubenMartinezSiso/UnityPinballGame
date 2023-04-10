@@ -11,10 +11,13 @@ public class PlungerScript : MonoBehaviour
     public Slider powerSlider;
     List<Rigidbody> ballList;
     bool ballReady;
+    public GameObject killball;
+    LifesScript externalLifesScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        externalLifesScript = killball.GetComponent<LifesScript>();
         powerSlider.minValue = 0f;
         powerSlider.maxValue = maxPower;
         ballList = new List<Rigidbody>();
@@ -23,42 +26,48 @@ public class PlungerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ballReady)
+        if(externalLifesScript.lifesLeft > 0)
         {
-            powerSlider.gameObject.SetActive(true);
-        }
-        else
-        {
-            powerSlider.gameObject.SetActive(false);
-        }
-
-        powerSlider.value = power;
-        if (ballList.Count > 0)
-        {
-            // The player press the button
-            ballReady = true;
-            if (Input.GetKey(KeyCode.Space))
+            if (ballReady)
             {
-                if (power <= maxPower)
-                {
-                    power += 50 * Time.deltaTime;
-                }
+                powerSlider.gameObject.SetActive(true);
+            }
+            else
+            {
+                powerSlider.gameObject.SetActive(false);
             }
 
-            // The player release the button
-            if (Input.GetKeyUp(KeyCode.Space))
+            powerSlider.value = power;
+
+            if (ballList.Count > 0)
             {
-                foreach (Rigidbody rigi in ballList)
+                // The player press the button
+                ballReady = true;
+                if (Input.GetKey(KeyCode.Space))
                 {
-                    rigi.AddForce(power * Vector3.forward);
+                    if (power <= maxPower)
+                    {
+                        power += 50 * Time.deltaTime;
+                    }
                 }
+
+                // The player release the button
+                if (Input.GetKeyUp(KeyCode.Space))
+                {
+                    foreach (Rigidbody rigi in ballList)
+                    {
+                        rigi.AddForce(power * Vector3.forward);
+                    }
+                }
+
+            }
+            else
+            {
+                ballReady = false;
+                power = 0f;
             }
         }
-        else
-        {
-            ballReady = false;
-            power = 0f;
-        }
+        
     }
     
     private void OnTriggerEnter(Collider other)
