@@ -6,17 +6,17 @@ public class BouncerScript : MonoBehaviour
 {
     [SerializeField] private float pointNumber = 10;
     [SerializeField] private points punctuation;
-    private AudioSource sound;
+    private AudioSource bellSource;
 
     private void Start()
     {
-        sound = GetComponent<AudioSource>();
+        bellSource = GetComponent<AudioSource>();
     }
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Ball"))
         {
-            sound.Play();
+            //sound.Play();
             //SoundController.Instance.ExecuteSound(sound);
             punctuation.AddPoints(pointNumber);
         }
@@ -26,6 +26,7 @@ public class BouncerScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
+            bellSource.Play();
             punctuation.AddPoints(pointNumber);
         }
     }
