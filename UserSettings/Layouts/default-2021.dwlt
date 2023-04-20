@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 64
+  controlID: 50
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 539
     height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 109
+  controlID: 95
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -282,9 +282,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 04670000
-      m_LastClickedID: 26372
-      m_ExpandedIDs: bab4fafff006feff20c5ffffd2e5ffffe6e5ffff1eeaffffa6f9ffff06660000
+      m_SelectedIDs: 8e5c0000
+      m_LastClickedID: 23694
+      m_ExpandedIDs: 92b9fdffda87feffb0e3feff34fbffffa25d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -390,22 +390,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Alstra Infinite/Arcade Machines - PolyPack/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Alstra Infinite/Arcade Machines - PolyPack/Prefabs
-  m_LastFoldersGridSize: -1
+  - Assets/Scripts
+  m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Usuario\Desktop\Universidad VIA\GMD Project\PinballGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 33.400024}
-    m_SelectedIDs: da620000
-    m_LastClickedID: 25306
-    m_ExpandedIDs: 0000000058610000cc620000d062000000ca9a3bffffff7f
+    m_SelectedIDs: ee600000
+    m_LastClickedID: 24814
+    m_ExpandedIDs: 00000000d460000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -433,7 +433,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000058610000
+    m_ExpandedIDs: 00000000d4600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -477,7 +477,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 2}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
 --- !u!114 &14
@@ -701,7 +701,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -839,9 +839,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.3642383, y: 2.69879, z: 1.4993486}
+    m_Target: {x: -1.8413824, y: -32.96382, z: 28.777077}
     speed: 2
-    m_Value: {x: -7.3642383, y: 2.69879, z: 1.4993486}
+    m_Value: {x: -1.8413824, y: -32.96382, z: 28.777077}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -888,13 +888,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.119651474, y: -0.19758475, z: 0.02431127, w: -0.9726798}
+    m_Target: {x: 0.3753942, y: -0.029283676, z: 0.010716636, w: 0.92657983}
     speed: 2
-    m_Value: {x: -0.11964829, y: -0.1975795, z: 0.024310624, w: -0.9726539}
+    m_Value: {x: 0.37531102, y: -0.029277189, z: 0.010714262, w: 0.92637455}
   m_Size:
-    m_Target: 19.083927
+    m_Target: 26.880814
     speed: 2
-    m_Value: 19.083927
+    m_Value: 26.880814
   m_Ortho:
     m_Target: 0
     speed: 2
