@@ -14,7 +14,6 @@ public class LifesScript : MonoBehaviour
     SpringScript externalScriptInstance;
     public bool plungeractive;
 
-    // Start is called before the first frame update
     void Start()
     {
         lifesLeft = 3;

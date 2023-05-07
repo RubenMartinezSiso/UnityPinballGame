@@ -6,7 +6,7 @@ public class SoundController : MonoBehaviour
 {
     public static SoundController Instance;
     private AudioSource audioSource;
-    // Start is called before the first frame update
+
     private void Awake()
     {
         if(Instance == null)
@@ -21,7 +21,6 @@ public class SoundController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     public void ExecuteSound(AudioClip sound)
     {
         audioSource.PlayOneShot(sound);

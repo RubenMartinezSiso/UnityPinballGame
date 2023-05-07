@@ -5,7 +5,6 @@ using UnityEngine.Assertions.Must;
 
 public class SpringScript : MonoBehaviour
 {
-    /* Constants */
     // Initial Z value of the scale
     const float initialZScaleValue = 1f;
     // Initial Z value of the position
@@ -17,7 +16,6 @@ public class SpringScript : MonoBehaviour
     // Limit of scale reduction
     const float minimumScale = 0.10f;
 
-    /* Public */
     public float newZScale = initialZScaleValue;
     public float newZPosition = initialZPositionValue;
     public float delay = delayValue;
@@ -39,8 +37,6 @@ public class SpringScript : MonoBehaviour
             // The player press the button
             if (Input.GetKey(KeyCode.Space))
             {
-                // Debug.Log("PRESS AND HOLD SPACE");
-                // Debug.Log("newZScale:" + newZScale);
                 timer += Time.deltaTime;
                 if (timer > delay)
                 {

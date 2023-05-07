@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Presets;
 using UnityEngine;
 
 public class FlipperScript : MonoBehaviour
@@ -16,7 +15,6 @@ public class FlipperScript : MonoBehaviour
     public AudioSource flipperSound;
     bool played = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         externalLifesScript = killball.GetComponent<LifesScript>();
@@ -25,7 +23,6 @@ public class FlipperScript : MonoBehaviour
         flipperSound = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(externalLifesScript.lifesLeft > 0)

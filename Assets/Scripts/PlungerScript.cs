@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class PlungerScript : MonoBehaviour
 {
     float power;
-    // float minPower = 0f;
     public float maxPower = 100f;
     public Slider powerSlider;
     List<Rigidbody> ballList;
@@ -14,7 +13,6 @@ public class PlungerScript : MonoBehaviour
     public GameObject killball;
     LifesScript externalLifesScript;
 
-    // Start is called before the first frame update
     void Start()
     {
         externalLifesScript = killball.GetComponent<LifesScript>();
@@ -23,7 +21,6 @@ public class PlungerScript : MonoBehaviour
         ballList = new List<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(externalLifesScript.lifesLeft > 0)

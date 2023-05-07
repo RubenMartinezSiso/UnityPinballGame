@@ -16,8 +16,6 @@ public class BouncerScript : MonoBehaviour
     {
         if(other.CompareTag("Ball"))
         {
-            //sound.Play();
-            //SoundController.Instance.ExecuteSound(sound);
             punctuation.AddPoints(pointNumber);
         }
     }

@@ -9,12 +9,11 @@ public class SpawnerScript : MonoBehaviour
     public Transform respawnPoint;
     public GameObject spring;
     SpringScript externalSpringScript;
-    // Start is called before the first frame update
+
     void Start()
     {
         externalSpringScript = spring.GetComponent<SpringScript>();
     }
-
 
     private void OnCollisionEnter(Collision collision)
     {
