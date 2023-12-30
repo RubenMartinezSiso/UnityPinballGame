@@ -1,9 +1,9 @@
 # 🕹 Pinball
 
 ##  How to play?
-A: left flipper <br>
-D: right flipper <br>
-SPACEBAR: charge and shoot
+A: Left flipper <br>
+D: Right flipper <br>
+SPACEBAR: Charge and shoot
 
 ## YouTube demonstration
 ▶ https://www.youtube.com/watch?v=twmKcJvxuTU
