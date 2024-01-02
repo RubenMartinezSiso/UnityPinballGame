@@ -1,14 +1,15 @@
-# 🕹 Pinball
+# Pinball Game 👾
+For Unity
 
-##  How to play?
+##  How to play? 🕹
 A: Left flipper <br>
 D: Right flipper <br>
 SPACEBAR: Charge and shoot
 
-## YouTube demonstration
-▶ https://www.youtube.com/watch?v=twmKcJvxuTU
+## YouTube demonstration ▶
+-> https://www.youtube.com/watch?v=twmKcJvxuTU
 
-## Resources
+## Resources 🔎
 ### Arcade machines assets
 Assets store: https://assetstore.unity.com/packages/3d/props/arcade-machines-polypack-207908 <br>
 ### Audio tracks
